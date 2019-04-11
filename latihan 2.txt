@@ -1,0 +1,104 @@
+D:\basic-python>python
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> myfile = open(
+... "perangkat.txt")
+>>> content = myfile.read()
+>>> nyfile.close()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'nyfile' is not defined
+>>> myfile.close()
+>>> print(content)
+SSD
+HDD
+PC
+>>> myfile = open ("perangkat.txt")
+>>> type(myfile)
+<class '_io.TextIOWrapper'>
+>>> myfile.read()
+'SSD\nHDD\nPC'
+>>> myfile.read()
+''
+>>> myfile = open("prodi.txt")
+>>> content = myfile.read()
+>>> myfile.close()
+>>> print(content)
+Elektro
+Informatika
+Teknik Industri
+Sistem Informasi
+DKV
+RPL
+>>> "hello\nworld".splitlines()
+['hello', 'world']
+>>> a = [1,2,3]
+>>> print (a[2])
+3
+>>> blackpink = {"lisa", "Jennie","Rose","Ji-So"}
+>>> for pin in blackpink
+  File "<stdin>", line 1
+    for pin in blackpink
+                       ^
+SyntaxError: invalid syntax
+>>> print(blackpink)
+{'Rose', 'Jennie', 'lisa', 'Ji-So'}
+>>> a = [1,3,5,7,9]
+>>> for i in a:
+...  b = i + 10
+...  print(b)
+...
+11
+13
+15
+17
+19
+>>> mylist [3,4,6,11,2,17,90]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mylist' is not defined
+>>> mylist = [3,4,6,11,2,17,90]
+>>> for i in mylist:
+...  if(i>5):
+...  print(i)
+  File "<stdin>", line 3
+    print(i)
+        ^
+IndentationError: expected an indented block
+>>> print(i)
+9
+>>> myfile=open("pegawai.txt",
+... "w")
+>>> myfile.write('bambs")
+  File "<stdin>", line 1
+    myfile.write('bambs")
+                        ^
+SyntaxError: EOL while scanning string literal
+>>> myfile.write("bambs")
+5
+>>> myfile.close()
+>>> myfile.write("Dejen")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
+>>> myfile.=open("pegawai.txt",
+  File "<stdin>", line 1
+    myfile.=open("pegawai.txt",
+           ^
+SyntaxError: invalid syntax
+>>> myfile.=open("pegawai.txt","w")
+  File "<stdin>", line 1
+    myfile.=open("pegawai.txt","w")
+           ^
+SyntaxError: invalid syntax
+>>> myfile=open("pegawai.txt","w")
+>>> myfile.write("Dejen")
+5
+>>> myfile.write("Lindow")
+6
+>>> myfile.close()
+>>> myfile=open("pegawai.txt","w")
+>>> myfile.write("\nLindow")
+7
+>>> myfile.close()
+>>>
